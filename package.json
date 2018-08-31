@@ -1,0 +1,42 @@
+{
+  "name": "unist-ts",
+  "version": "0.0.0",
+  "description": "TypeScript definitions for universal syntax tree",
+  "license": "MIT",
+  "keywords": [],
+  "repository": "syntax-tree/unist-ts",
+  "bugs": "https://github.com/syntax-tree-ts/unist/issues",
+  "author": "Christian Murphy <christian.murphy.42@gmail.com>",
+  "contributors": [
+    "Christian Murphy <christian.murphy.42@gmail.com>",
+    "Titus Wormer <tituswormer@gmail.com> (wooorm.com)"
+  ],
+  "files": [
+    "index.d.ts"
+  ],
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "remark-cli": "^5.0.0",
+    "remark-preset-wooorm": "^4.0.0",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "format": "remark . -qfo && prettier --write \"**/*.ts\"",
+    "test-types": "tsc index.d.ts mdast.d.ts",
+    "test": "npm run format && npm run test-types"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
+  }
+}
