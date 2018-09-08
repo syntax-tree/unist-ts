@@ -19,11 +19,12 @@
     "prettier": "^1.14.2",
     "remark-cli": "^5.0.0",
     "remark-preset-wooorm": "^4.0.0",
-    "typescript": "^3.0.1"
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.ts\"",
-    "test-types": "tsc index.d.ts mdast.d.ts",
+    "test-types": "ts-node test.ts",
     "test": "npm run format && npm run test-types"
   },
   "prettier": {
