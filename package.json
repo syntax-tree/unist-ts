@@ -5,7 +5,7 @@
   "license": "MIT",
   "keywords": [],
   "repository": "syntax-tree/unist-ts",
-  "bugs": "https://github.com/syntax-tree-ts/unist/issues",
+  "bugs": "https://github.com/syntax-tree/unist-ts/issues",
   "author": "Christian Murphy <christian.murphy.42@gmail.com>",
   "contributors": [
     "Christian Murphy <christian.murphy.42@gmail.com>",
